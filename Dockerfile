@@ -3,11 +3,15 @@ FROM cypress/included:13.7.3
 # Set the working directory
 WORKDIR /app
 
-# Copy the project files to the container
-COPY . .
+# Copy only package.json and package-lock.json explicitly
+COPY ./package.json ./package.json
+COPY ./package-lock.json ./package-lock.json
 
 # Install dependencies
 RUN npm install
+
+# Copy the rest of the project files
+COPY . .
 
 # Add the k6 repository and install k6
 RUN apt-get update && \
