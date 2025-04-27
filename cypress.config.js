@@ -8,17 +8,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // Initialize database connection pool
       pool = new Pool({
-        host: process.env.DB_HOST || 'localhost',
-        port: process.env.DB_PORT || 5432,
-        database: process.env.DB_NAME || 'testdb',
-        user: process.env.DB_USER || 'testuser',
-        password: process.env.DB_PASSWORD || 'testpassword',
+        connectionString: process.env.DATABASE_URL || 'postgresql://postgres:mysecretpassword@postgres:5432/postgres',
       });
-      
+
       // Listen for individual test completion
       on('after:spec', async (spec, results) => {
         const tableName = process.env.CYPRESS_TABLE_NAME || 'test_runs';
-        
+
         if (results && results.tests) {
           for (const test of results.tests) {
             try {
@@ -32,7 +28,7 @@ module.exports = defineConfig({
                   test.error ? test.error.message : null
                 ],
               };
-              
+
               // Run SQL query
               await pool.query(query);
               console.log(`Saved test result to database: ${test.title[test.title.length - 1]}`);
@@ -42,7 +38,7 @@ module.exports = defineConfig({
           }
         }
       });
-      
+
       // Ensure pool is closed when tests complete
       on('after:run', async () => {
         if (pool) {
