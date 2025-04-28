@@ -17,10 +17,8 @@ services:
       - test-network
 
   cypress:
-    image: cypress/included:latest
-    volumes:
-      - ./cypress:/e2e/cypress
-    working_dir: cypress/e2e/1-getting-started
+    image: tulsanib/project_tulsanib_dbv1
+    container_name: cypress_app
     command: ["npx", "cypress", "run"]
     environment:
       DATABASE_URL: postgresql://postgres:mysecretpassword@postgres:5432/postgres
