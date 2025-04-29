@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:14
-    container_name: postgres 
+    container_name: postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mysecretpassword
@@ -11,10 +11,10 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdbdata:/var/lib/postgresql/data
       - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
-      - test-network
+      - my_custom_network
 
   cypress:
     image: tulsanib/project_tulsanib_dbv1
@@ -26,11 +26,11 @@ services:
     depends_on:
       - postgres
     networks:
-      - test-network
+      - my_custom_network
 
 volumes:
-  pgdata:
+  pgdbdata:
 
 networks:
-  test-network:
+  my_custom_network:
     driver: bridge

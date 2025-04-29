@@ -1,8 +1,13 @@
 RUN POSTGRES VIA DOCKER MANUALLY
 docker run --name postgres --network my_custom_network -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432  -d postgres
 
+docker volume create pgdata
+docker run --name postgres --network my_custom_network -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -v pgdata:/var/lib/postgresql/data postgres
+
 COPY THE TABLE
-docker cp "c:/Users/adity/Desktop/TulsaniB/New folder/PROJECT_TULSANIB/sql/init.sql" postgres:/init.sql
+docker cp "c:/Users/adity/Desktop/TulsaniB/APRIL/PROJECT_TULSANIB/sql/init.sql" postgres:/init.sql
+Execute the SQL Script Inside the Container
+docker exec -it postgres psql -U postgres -f /init.sql
 
 RUN IMAGE
 docker run --network my_custom_network tulsanib/project_tulsanib_dbv1 
