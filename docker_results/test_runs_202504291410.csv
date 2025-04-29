@@ -1,0 +1,125 @@
+id,test_name,test_status,duration,error_message,timestamp
+1,example to-do app - displays two todo items by default,passed,1455,,34:08.9
+2,example to-do app - can add new todo items,passed,881,,34:08.9
+3,example to-do app - can check off an item as completed,passed,459,,34:08.9
+4,example to-do app - with a checked task - can filter for uncompleted tasks,passed,631,,34:08.9
+5,example to-do app - with a checked task - can filter for completed tasks,passed,608,,34:08.9
+6,example to-do app - with a checked task - can delete all completed tasks,passed,654,,34:08.9
+7,Actions - .type() - type into a DOM element,passed,4773,,34:37.1
+8,Actions - .focus() - focus on a DOM element,passed,1290,,34:37.1
+9,Actions - .blur() - blur off a DOM element,passed,880,,34:37.1
+10,Actions - .clear() - clears an input or textarea element,passed,1004,,34:37.1
+11,Actions - .submit() - submit a form,passed,858,,34:37.2
+12,Actions - .click() - click on a DOM element,passed,3106,,34:37.2
+13,Actions - .dblclick() - double click on a DOM element,passed,524,,34:37.2
+14,Actions - .rightclick() - right click on a DOM element,passed,681,,34:37.2
+15,Actions - .check() - check a checkbox or radio element,passed,1407,,34:37.2
+16,Actions - .uncheck() - uncheck a checkbox element,passed,1586,,34:37.2
+17,Actions - .select() - select an option in a <select> element,passed,1747,,34:37.2
+18,Actions - .scrollIntoView() - scroll an element into view,passed,522,,34:37.2
+19,Actions - .trigger() - trigger an event on a DOM element,passed,436,,34:37.2
+20,Actions - cy.scrollTo() - scroll the window or element to a position,passed,2447,,34:37.2
+21,Aliasing - .as() - alias a DOM element for later use,passed,1157,,34:50.3
+22,Aliasing - .as() - alias a route for later use,passed,1992,,34:50.4
+23,Assertions - Implicit Assertions - .should() - make an assertion about the current subject,passed,1510,,35:03.7
+24,Assertions - Implicit Assertions - .and() - chain multiple assertions together,passed,364,,35:03.7
+25,Assertions - Explicit Assertions - expect - make an assertion about a specified subject,passed,367,,35:03.7
+26,Assertions - Explicit Assertions - pass your own callback function to should(),passed,333,,35:03.7
+27,Assertions - Explicit Assertions - finds element by class name regex,passed,296,,35:03.7
+28,Assertions - Explicit Assertions - can throw any error,passed,289,,35:03.7
+29,Assertions - Explicit Assertions - matches unknown text between two elements,passed,493,,35:03.7
+30,Assertions - Explicit Assertions - assert - assert shape of an object,passed,280,,35:03.7
+31,Assertions - Explicit Assertions - retries the should callback until assertions pass,passed,1841,,35:03.7
+32,Connectors - .each() - iterate over an array of elements,passed,1063,,35:13.7
+33,Connectors - .its() - get properties on the current subject,passed,331,,35:13.7
+34,Connectors - .invoke() - invoke a function on the current subject,passed,312,,35:13.7
+35,Connectors - .spread() - spread an array as individual args to callback function,passed,338,,35:13.7
+36,Connectors - .then() - invokes a callback function with the current subject,passed,402,,35:13.7
+37,Connectors - .then() - yields the returned value to the next command,passed,297,,35:13.7
+38,Connectors - .then() - yields the original subject without return,passed,365,,35:13.7
+39,Connectors - .then() - yields the value yielded by the last Cypress command inside,passed,366,,35:13.7
+40,Cookies - cy.getCookie() - get a browser cookie,passed,782,,35:23.8
+41,Cookies - cy.getCookies() - get browser cookies for the current domain,passed,465,,35:23.8
+42,Cookies - cy.getAllCookies() - get all browser cookies,passed,328,,35:23.8
+43,Cookies - cy.setCookie() - set a browser cookie,passed,473,,35:23.8
+44,Cookies - cy.clearCookie() - clear a browser cookie,passed,410,,35:23.8
+45,Cookies - cy.clearCookies() - clear browser cookies for the current domain,passed,397,,35:23.8
+46,Cookies - cy.clearAllCookies() - clear all browser cookies,passed,348,,35:23.8
+47,Cypress APIs - Cypress.Commands - .add() - create a custom command,passed,623,,35:33.3
+48,Cypress APIs - Cypress.Cookies - .debug() - enable or disable debugging,passed,336,,35:33.3
+49,Cypress APIs - Cypress.arch - Get CPU architecture name of underlying OS,passed,261,,35:33.3
+50,Cypress APIs - Cypress.config() - Get and set configuration options,passed,372,,35:33.3
+51,Cypress APIs - Cypress.dom - .isHidden() - determine if a DOM element is hidden,passed,275,,35:33.3
+52,Cypress APIs - Cypress.env() - Get environment variables,passed,346,,35:33.3
+53,Cypress APIs - Cypress.log - Control what is printed to the Command Log,passed,274,,35:33.3
+54,Cypress APIs - Cypress.platform - Get underlying OS name,passed,280,,35:33.3
+55,Cypress APIs - Cypress.version - Get current version of Cypress being run,passed,252,,35:33.3
+56,Cypress APIs - Cypress.spec - Get current spec information,passed,261,,35:33.3
+57,Files - cy.fixture() - load a fixture,passed,1009,,35:41.7
+58,Files - cy.fixture() or require - load a fixture,passed,282,,35:41.7
+59,Files - cy.readFile() - read file contents,passed,371,,35:41.7
+60,Files - cy.writeFile() - write to a file,passed,661,,35:41.7
+61,Location - cy.hash() - get the current URL hash,passed,597,,35:49.0
+62,Location - cy.location() - get window.location,passed,286,,35:49.0
+63,Location - cy.url() - get the current URL,passed,265,,35:49.0
+64,Misc - cy.exec() - execute a system command,passed,755,,35:59.2
+65,Misc - cy.focused() - get the DOM element that has focus,passed,522,,35:59.2
+66,Misc - cy.wrap() - wrap an object,passed,283,,35:59.2
+67,Misc - Cypress.Screenshot - cy.screenshot() - take a screenshot,passed,2295,,35:59.2
+68,Misc - Cypress.Screenshot - Cypress.Screenshot.defaults() - change default config of screenshots,passed,309,,35:59.2
+69,Navigation - cy.go() - go back or forward in the browser's history,passed,1895,,36:09.1
+70,Navigation - cy.reload() - reload the page,passed,964,,36:09.1
+71,Navigation - cy.visit() - visit a remote url,passed,733,,36:09.1
+72,Network Requests - cy.request() - make an XHR request,passed,1193,,36:20.9
+73,Network Requests - cy.request() - verify response using BDD syntax,passed,747,,36:20.9
+74,Network Requests - cy.request() with query parameters,passed,551,,36:20.9
+75,Network Requests - cy.request() - pass result to the second request,passed,904,,36:20.9
+76,Network Requests - cy.request() - save response in the shared test context,passed,864,,36:20.9
+77,Network Requests - cy.intercept() - route responses to matching requests,passed,1593,,36:20.9
+78,Querying - cy.get() - query DOM elements,passed,754,,36:29.0
+79,Querying - cy.contains() - query DOM elements with matching content,passed,304,,36:29.0
+80,Querying - .within() - query DOM elements within a specific element,passed,270,,36:29.0
+81,Querying - cy.root() - query the root DOM element,passed,239,,36:29.0
+82,Querying - best practices - selecting elements,passed,844,,36:29.0
+83,"Spies, Stubs, and Clock - cy.spy() - wrap a method in a spy",passed,541,,36:38.9
+84,"Spies, Stubs, and Clock - cy.spy() retries until assertions pass",passed,2580,,36:38.9
+85,"Spies, Stubs, and Clock - cy.stub() - create a stub and/or replace a function with stub",passed,246,,36:39.0
+86,"Spies, Stubs, and Clock - cy.clock() - control time in the browser",passed,394,,36:39.0
+87,"Spies, Stubs, and Clock - cy.tick() - move time in the browser",passed,409,,36:39.0
+88,"Spies, Stubs, and Clock - cy.stub() matches depending on arguments",passed,62,,36:39.0
+89,"Spies, Stubs, and Clock - matches call arguments using Sinon matchers",passed,90,,36:39.0
+90,Local Storage / Session Storage - cy.clearLocalStorage() - clear all data in localStorage for the current origin,passed,990,,36:47.1
+91,Local Storage / Session Storage - cy.getAllLocalStorage() - get all data in localStorage for all origins,passed,377,,36:47.1
+92,Local Storage / Session Storage - cy.clearAllLocalStorage() - clear all data in localStorage for all origins,passed,388,,36:47.1
+93,Local Storage / Session Storage - cy.getAllSessionStorage() - get all data in sessionStorage for all origins,passed,319,,36:47.1
+94,Local Storage / Session Storage - cy.clearAllSessionStorage() - clear all data in sessionStorage for all origins,passed,381,,36:47.1
+95,Traversal - .children() - get child DOM elements,passed,580,,36:58.1
+96,Traversal - .closest() - get closest ancestor DOM element,passed,273,,36:58.1
+97,Traversal - .eq() - get a DOM element at a specific index,passed,313,,36:58.1
+98,Traversal - .filter() - get DOM elements that match the selector,passed,304,,36:58.1
+99,Traversal - .find() - get descendant DOM elements of the selector,passed,331,,36:58.1
+100,Traversal - .first() - get first DOM element,passed,256,,36:58.1
+101,Traversal - .last() - get last DOM element,passed,252,,36:58.1
+102,Traversal - .next() - get next sibling DOM element,passed,268,,36:58.1
+103,Traversal - .nextAll() - get all next sibling DOM elements,passed,277,,36:58.1
+104,Traversal - .nextUntil() - get next sibling DOM elements until next el,passed,259,,36:58.1
+105,Traversal - .not() - remove DOM elements from set of DOM elements,passed,262,,36:58.1
+106,Traversal - .parent() - get parent DOM element from DOM elements,passed,256,,36:58.1
+107,Traversal - .parents() - get parent DOM elements from DOM elements,passed,280,,36:58.1
+108,Traversal - .parentsUntil() - get parent DOM elements from DOM elements until el,passed,289,,36:58.1
+109,Traversal - .prev() - get previous sibling DOM element,passed,267,,36:58.1
+110,Traversal - .prevAll() - get all previous sibling DOM elements,passed,253,,36:58.2
+111,Traversal - .prevUntil() - get all previous sibling DOM elements until el,passed,288,,36:58.2
+112,Traversal - .siblings() - get all sibling DOM elements,passed,254,,36:58.2
+113,Utilities - Cypress._ - call a lodash method,passed,939,,37:07.3
+114,Utilities - Cypress.$ - call a jQuery method,passed,365,,37:07.3
+115,Utilities - Cypress.Blob - blob utilities and base64 string conversion,passed,727,,37:07.3
+116,Utilities - Cypress.minimatch - test out glob patterns against strings,passed,237,,37:07.3
+117,Utilities - Cypress.Promise - instantiate a bluebird promise,passed,1254,,37:07.3
+118,Viewport - cy.viewport() - set the viewport size and dimension,passed,3368,,37:16.7
+119,Waiting - cy.wait() - wait for a specific amount of time,passed,5402,,37:29.1
+120,Waiting - cy.wait() - wait for a specific route,passed,917,,37:29.1
+121,Window - cy.window() - get the global window object,passed,554,,37:36.2
+122,Window - cy.document() - get the document object,passed,245,,37:36.2
+123,Window - cy.title() - get the title,passed,261,,37:36.2
+124,API Load Test Integration with k6 - should trigger k6 load test script,passed,32638,,38:12.8
