@@ -1,0 +1,7 @@
+{
+    "environments": {
+        "dev": {
+            "API_URL": "https://fakestoreapi.com"
+        }
+    }
+}
